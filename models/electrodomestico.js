@@ -23,13 +23,16 @@ class Electrodomestico {
         break;
     }
   }
+
   aplicarProcedencia() {
-    if (this.tipo === "Nacional") {
+    if (this.procedencia === "Nacional") {
       this.precio = this.precio + 250000;
     } else {
       this.precio = this.precio + 350000;
     }
   }
+
+  calcularPrecio() {}
 }
 
 module.exports = Electrodomestico;
